@@ -5,7 +5,7 @@
   ];
 
   const crossImage = "img/cross.png";
-  const board = document.getElementById('tabuleiro');
+  const board = $('#tabuleiro');
 
   let count = 0;
   let option1 = "";
@@ -40,7 +40,6 @@
       html += "</li>";
     }
     html += "</ul>";
-
     board.innerHTML = "<button id='iniciar-jogo'>Iniciar Jogo</button>";
     board.innerHTML += html;
   }
@@ -117,7 +116,6 @@
             break;
         }
       }
-
       if (gameEnded()) {
         endGame();
       }
