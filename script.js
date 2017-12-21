@@ -47,8 +47,8 @@
 
   function turnCardUp(card) {
     card.addClass("face-up");
-    card.children(".card").show();
-    card.children(".cross").hide();
+    card.children(".card").fadeIn(0);
+    card.children(".cross").fadeOut(0);
   }
 
   function turnCardsDown() {
@@ -57,8 +57,8 @@
     card2 = "";
 
     setTimeout(function () {
-      $("li:not(.match)").children(".cross").show();
-      $("li:not(.match)").children(".card").hide();
+      $("li:not(.match)").children(".cross").fadeIn(0);
+      $("li:not(.match)").children(".card").fadeOut(0);
     }, 1500)
   }
 
@@ -98,8 +98,8 @@
     showCards();
 
     setTimeout(function () {
-      $(".card").hide();
-      $(".cross").show();
+      $(".card").fadeOut(0);
+      $(".cross").fadeIn(0);
     }, 3000);
 
     $(document).on('click', 'li', function () {
