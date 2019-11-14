@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/gabrielcabralbfr/MemoryGame#readme",
   "dependencies": {
-    "jquery": "^1.11.3",
+    "jquery": "^3.4.0",
     "live-server": "^1.2.1"
   }
 }
