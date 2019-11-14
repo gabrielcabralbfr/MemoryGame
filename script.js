@@ -32,7 +32,6 @@
 
   function showCards() {
     let html = "<ul>";
-    let j = 0;
     for (let i = 0; i < 16; i++) {
       html += "<li>";
       html += "<img class='card front' src ='" + imagens[i] + "' />";
@@ -40,8 +39,8 @@
       html += "</li>";
     }
     html += "</ul>";
-    board.innerHTML = "<button id='iniciar-jogo'>Iniciar Jogo</button>";
-    board.innerHTML += html;
+    board[0].innerHTML = "<button id='iniciar-jogo'>Iniciar Jogo</button>";
+    board[0].innerHTML += html;
   }
 
   function turnCardUp(card) {
